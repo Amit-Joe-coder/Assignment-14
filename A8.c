@@ -4,15 +4,15 @@ from the user.
 #include <stdio.h>
 int main()
 {
-    int x[4], i, j, smallest, s_smallest, temp;
+    int x[10], i, j, smallest, s_smallest, temp;
     printf("enter 10 numbers: ");
-    for (i = 0; i < 4; i++)
+    for (i = 0; i < 10; i++)
     {
         scanf("%d", &x[i]);
     }
-    for (i = 0; i < 3; i++) // sorting
+    for (i = 0; i < 9; i++) // sorting
     {
-        for (j = i + 1; j < 4; j++)
+        for (j = i + 1; j < 10; j++)
         {
             if (x[i] > x[j])
             {
@@ -22,9 +22,9 @@ int main()
             }
         }
     }
-    for (i = 1; i < 3; i++) // finding 2nd smallest number
+    for (i = 1; i < 9; i++) // finding 2nd smallest number
     {
-        for (j = 0; j < 4; j++)
+        for (j = 0; j < 10; j++)
         {
             if (x[i]> x[j])
             {
